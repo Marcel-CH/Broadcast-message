@@ -18,7 +18,7 @@ IF(Test-Path C:\Temp\GetComputerList -PathType Container){
     Write-Host "ComputerList Files copied!" -ForegroundColor Green
     }
 
-# PSEXEC ins system32 kopieren
+# copy PSEXEC temporaily to the computer
 Copy-Item -Path "Path-to-PSEXEC\SYSINTERNALS\PsExec.exe" -Destination "C:\Temp\GetComputerList\" -ErrorAction SilentlyContinue
 
 Write-Host "PSEXEC copied!" -ForegroundColor Green
